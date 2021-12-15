@@ -1,8 +1,8 @@
 package Pilha;
 
 public class FluxoComTratamento {
-
-	 public static void main(String[] args) {
+                                              ///checked
+	 public static void main(String[] args) throws MinhaExcecaoHerdandoDiretoDeException {
 	        System.out.println("Ini do main");
 	        try {
 	        	   metodo1();
@@ -17,15 +17,15 @@ public class FluxoComTratamento {
 	          System.out.println("Fim do main");
 	 }
 
-	    private static void metodo1()  throws MinhaExcecaoHerdandoDiretoDeException {
+	    private static void metodo1()  {
 	        System.out.println("Ini do metodo1");
 	    
 	        metodo2();
 	  
 	        System.out.println("Fim do metodo1");
 	    }
-                                              ///checked
-	    private static void metodo2()  throws MinhaExcecaoHerdandoDiretoDeException {
+                                          
+	    private static void metodo2()  {
 	        System.out.println("Ini do metodo2");	            	       	        
 	        
 	       
