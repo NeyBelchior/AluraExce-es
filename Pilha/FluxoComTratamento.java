@@ -6,7 +6,9 @@ public class FluxoComTratamento {
 	        System.out.println("Ini do main");
 	        try {
 	        	   metodo1();
-		        }catch(Exception e/*ArithmeticException | NullPointerException  |MinhaExcecao|MinhaExcecaoHerdandoDiretoDeException e*/) {
+		        }catch(
+		        		
+		        		Exception e) {
 		        
 		        	String msg = e.getMessage();
 		        	System.out.println(msg);
@@ -17,15 +19,17 @@ public class FluxoComTratamento {
 	          System.out.println("Fim do main");
 	 }
 
-	    private static void metodo1() throws MinhaExcecaoHerdandoDiretoDeException {
+	    private static void metodo1() throws MinhaExcecaoHerdandoDiretoDeException  {
 	        System.out.println("Ini do metodo1");
 	    
-	        metodo2();
+	        
+				metodo2();
+			
 	  
 	        System.out.println("Fim do metodo1");
 	    }
                                           
-	    private static void metodo2() throws MinhaExcecaoHerdandoDiretoDeException  {
+	    private static void metodo2() throws MinhaExcecaoHerdandoDiretoDeException {
 	        System.out.println("Ini do metodo2");	            	       	        
 	        
 	       

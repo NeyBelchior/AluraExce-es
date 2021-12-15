@@ -6,7 +6,7 @@ public class Fluxo {
 	        System.out.println("Ini do main");
 	        try {
 	        	   metodo1();
-		        }catch(ArithmeticException | NullPointerException e) {
+		        }catch(Exception e) {
 		        
 		        	String msg = e.getMessage();
 		        	System.out.println(msg);
@@ -32,8 +32,7 @@ public class Fluxo {
 	          
 	          //  int a =1/0;
 	            Conta c = null;
-	            c.deposita();
-	
+
 		            
 	            }
 	       
