@@ -6,7 +6,7 @@ public class FluxoComTratamento {
 	        System.out.println("Ini do main");
 	        try {
 	        	   metodo1();
-		        }catch(ArithmeticException | NullPointerException  |MinhaExcecao|MinhaExcecaoHerdandoDiretoDeException e) {
+		        }catch(Exception e/*ArithmeticException | NullPointerException  |MinhaExcecao|MinhaExcecaoHerdandoDiretoDeException e*/) {
 		        
 		        	String msg = e.getMessage();
 		        	System.out.println(msg);
