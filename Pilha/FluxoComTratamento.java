@@ -2,11 +2,11 @@ package Pilha;
 
 public class FluxoComTratamento {
                                               ///checked
-	 public static void main(String[] args) throws MinhaExcecaoHerdandoDiretoDeException {
+	 public static void main(String[] args)  {
 	        System.out.println("Ini do main");
 	        try {
 	        	   metodo1();
-		        }catch(ArithmeticException | NullPointerException  |MinhaExcecao e) {
+		        }catch(ArithmeticException | NullPointerException  |MinhaExcecao|MinhaExcecaoHerdandoDiretoDeException e) {
 		        
 		        	String msg = e.getMessage();
 		        	System.out.println(msg);
@@ -17,7 +17,7 @@ public class FluxoComTratamento {
 	          System.out.println("Fim do main");
 	 }
 
-	    private static void metodo1()  {
+	    private static void metodo1() throws MinhaExcecaoHerdandoDiretoDeException {
 	        System.out.println("Ini do metodo1");
 	    
 	        metodo2();
@@ -25,7 +25,7 @@ public class FluxoComTratamento {
 	        System.out.println("Fim do metodo1");
 	    }
                                           
-	    private static void metodo2()  {
+	    private static void metodo2() throws MinhaExcecaoHerdandoDiretoDeException  {
 	        System.out.println("Ini do metodo2");	            	       	        
 	        
 	       
