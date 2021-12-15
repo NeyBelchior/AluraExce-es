@@ -17,22 +17,25 @@ public class FluxoComTratamento {
 	          System.out.println("Fim do main");
 	 }
 
-	    private static void metodo1() {
+	    private static void metodo1()  throws MinhaExcecaoHerdandoDiretoDeException {
 	        System.out.println("Ini do metodo1");
 	    
 	        metodo2();
 	  
 	        System.out.println("Fim do metodo1");
 	    }
-
-	    private static void metodo2() {
+                                              ///checked
+	    private static void metodo2()  throws MinhaExcecaoHerdandoDiretoDeException {
 	        System.out.println("Ini do metodo2");	            	       	        
 	        
 	       
 	        // ArithmeticException execption = new ArithmeticException ("Deu errado");
 	        //throw execption;
 	         //Maneira simplificada
-	        throw new MinhaExcecao("Deu errado");
+	        throw new MinhaExcecaoHerdandoDiretoDeException("Deu ruim");
+	       
+	           //uncheked não são verificados pelo compilador
+	       // throw new MinhaExcecao("Deu errado");
 	        //System.out.println("Fim do metodo2!");
 	    }
 	
